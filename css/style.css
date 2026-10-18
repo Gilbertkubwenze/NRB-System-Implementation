@@ -1,0 +1,85 @@
+/* css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f0f2f5; 
+    margin: 0; 
+    padding: 0; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Beautiful Navbar */
+.navbar { 
+    background-color: #1a1a1a; /* Deep black */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border-bottom: 4px solid #ce1126; /* Malawi Red */
+}
+.navbar a { 
+    color: #ffffff; 
+    text-decoration: none; /* No underline */
+    padding: 18px 30px; 
+    font-size: 16px; 
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover { 
+    background-color: #2d2d2d; 
+    color: #339e35; /* Malawi Green */
+    border-bottom: 3px solid #339e35;
+}
+
+/* Centered Main Content Box */
+.container { 
+    width: 85%; 
+    max-width: 1000px;
+    margin: 40px auto; 
+    background: rgba(255, 255, 255, 0.97); /* Slightly transparent white */
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-top: 6px solid #339e35; /* Malawi Green */
+}
+
+h2 { color: #1a1a1a; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0;}
+h3 { color: #ce1126; } /* Malawi Red for subheadings */
+
+/* Dashboard Cards */
+.stats-container { display: flex; gap: 20px; text-align: center; margin-top: 20px; }
+.stat-box { flex: 1; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.stat-box h3 { margin: 0 0 10px 0; font-size: 16px; color: #555;}
+.stat-box h1 { margin: 0; font-size: 36px; }
+.bg-blue { background: #e3f2fd; color: #0056b3; }
+.bg-green { background: #e8f5e9; color: #28a745; }
+.bg-red { background: #ffebee; color: #ce1126; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; border-radius: 8px; overflow: hidden; }
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 14px; text-align: left; }
+th { background-color: #1a1a1a; color: white; font-weight: 600; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+tr:hover { background-color: #f1f1f1; }
+
+/* Forms */
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #333;}
+.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+.form-group input:focus, .form-group select:focus { border-color: #339e35; outline: none; }
+
+/* Buttons */
+.btn { background-color: #1a1a1a; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; text-decoration: none; display: inline-block;}
+.btn:hover { background-color: #333; }
+.btn-success { background-color: #339e35; }
+.btn-success:hover { background-color: #267527; }
+
+/* Alerts */
+.alert { padding: 15px; margin-bottom: 20px; border-radius: 6px; font-weight: 600;}
+.alert-success { background-color: #d4edda; color: #155724; border-left: 5px solid #28a745;}
+.alert-danger { background-color: #f8d7da; color: #721c24; border-left: 5px solid #ce1126; }
